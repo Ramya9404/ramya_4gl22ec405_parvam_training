@@ -1,0 +1,25 @@
+.parent{
+    border: 2px solid brown;
+    display: flex;
+    height: 500px;
+    /* justify-content handles the horizontal 
+    direction or x-plane */
+    /* justify-content: flex-end, flex-start, center, space-around, space-between,
+     space evenly; */
+    justify-content: space-between;
+    /* align-items: handles the verticle direction or y-axis plane */
+     /* align-items:center,end, start ; */
+     align-items: center;
+     flex-direction: row;
+     flex-wrap:wrap;
+     align-content: space-evenly;
+     gap:50px;
+}
+.child{
+    width: 200px;
+    height: 100px;
+    background-color: darkmagenta;
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}

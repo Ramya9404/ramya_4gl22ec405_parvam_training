@@ -1,0 +1,38 @@
+nav{
+    background-color: aliceblue;
+    background-image: url(media_1/flower1.jpg);
+    border: 10px ridge rgb(128, 128, 128);
+}
+.menu-bar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+    font-size: 40px;
+}
+.menu-items{
+    /* border: 5px solid black; */
+    padding: 20px;
+    flex-grow: 1;
+}
+.logo{
+    flex-grow: 2;    
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+    font-size: 60px;
+}
+img{
+    width: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}

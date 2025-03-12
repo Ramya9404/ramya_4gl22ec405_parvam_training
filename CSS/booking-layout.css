@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.booking-layout{
+    border-spacing: 20px;
+    border: 2px solid lightgray;
+}
+th{
+    border: 1px solid black;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(34, 255, 0);
+}
+td{
+    border: 0.5px solid grey;
+    text-align: center;
+    color: rgb(25, 0, 255);
+    background-color:azure;
+}
+td:hover{
+    background-color: red;
+    color: white;
+}
+.verticle-gap, .horizontal-gap{
+    background-color:white;
+    border: none;
+}
+.verticle-gap{
+    width: 30px;
+}
+.horizontal-gap{
+    height: 30px;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 30px;
+}
+.stats p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0 20px;
+}
+.stats p:last-child{
+    margin: 5px 0 0px;
+}
+.available, .selected, .sold{
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid grey;
+    text-align: center;
+    padding: 3px;
+}
+.available{
+    color: green;
+    background-color: #f2f3f4;
+}
+.selected{
+    color: white;
+    background-color:blueviolet;
+}
+.sold{
+    color: white;
+    background-color: grey;
+}
+.checked-text{
+    background-color: rgb(6, 128, 0);
+    padding: 10px;
+    color: white;
+}
+.sold input[type="checkbox"]{
+    display: none;
+}
+.sold:hover{
+    background-color: grey;
+    cursor:no-drop;
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Pacifico;
+            src: url("font_family/Pacifico-Regular.ttf");
+        }
+        @font-face {
+            font-family: myfont;
+            src: url("font_family/RobotoCondensed-VariableFont_wght.ttf");
+        }
+        @font-face {
+            font-family: myfont1;
+            src: url("font_family/PlaywriteITModerna-VariableFont_wght.ttf");
+        }
+        @font-face {
+            font-family:DancingScript-Variable ;
+            src: url("font_family/DancingScript-VariableFont_wght.ttf")
+        }
+        p {
+            /*Because of Element selector we are getting repetitive style */
+            color: white;
+            background-color: rgb(255, 165, 0);
+            padding: 10px;
+        }
+
+        /* syntax for class selector : ".class_name" */
+        .para-one {
+            color: navy;
+            background-color: greenyellow;
+        }
+
+        .para-two {
+            color: darkcyan;
+            background-color: rgb(0, 255, 242);
+        }
+
+        .heading-1 {
+            font-size: 60px;
+            /* font-weight: bolder; */
+            font-weight: 200;
+            /* font-weight: lighter; */
+            /* font-family: "Roboto Condensed", serif; */
+            font-family: "Pacifico";
+            text-align: right;
+        }
+
+        .third-heading {
+            font-size: 60px;
+            /* font-family: "Bebas Neue", serif; */
+            font-family: "myfont1";
+            color: black;
+            background-color: antiquewhite;
+            letter-spacing: 10px;
+        }
+
+        .second-heading {
+            font-size: 60px;
+            font-family: "Playwrite IT Moderna", serif;
+            /* font-family: "myfont"; */
+            color: darkcyan;
+            background-color: rgb(119, 255, 0);
+            text-align:center;
+            text-transform:lowercase;
+            text-decoration: overline;
+        }
+        .heading11 {
+            font-size: 60px;
+            font-family: "DancingScript-Variable";
+            /* font-family: "myfont"; */
+            color:darkviolet;
+            background-color: rgb(18, 177, 170);
+            text-transform: uppercase;
+        }
+        .some-para {
+            font-size: 60px;
+            font-family: "DancingScript-Variable";
+            /* font-family: "myfont"; */
+            color:rgb(18, 0, 211);
+            /* text-align: rigtht; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+            line-height: 2 ;
+            word-spacing: 4px;
+        }
+        a{
+            text-decoration:underline;
+            font-size: 60px;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <p class="para-one">This is a paragraph.</p>
+    <p class="para-two">This is a second paragraph.</p>
+    <p>This is a third paragraph.</p>
+    <h1 class="para-one heading-1"> Heading</h1>
+    <p>The above written tag indicates the heading</p>
+    <ol class="para-two">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ol>
+    <h2 class="third-heading">Heading2</h2>
+    <h2 class="second-heading">Ramya Mahesh</h2>
+    <h2 class="heading11">paragraph</h2>
+    <h2 class="some-para">This is a paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus, itaque et facere excepturi praesentium sint maxime eius incidunt nisi nihil? At perferendis unde harum mollitia eum accusantium similique nulla? Molestias assumenda dolorem quidem unde nisi facilis beatae odit repellendus delectus, doloribus quos nesciunt quis aperiam, neque consequatur molestiae! Quis iusto repudiandae hic aperiam placeat vero, asperiores voluptates, recusandae repellendus libero dolorem eveniet mollitia debitis dolores quam eius sequi excepturi necessitatibus alias? Reprehenderit quibusdam consectetur nam cum sapiente, eaque eum praesentium id nesciunt? Fuga dolore eos tenetur fugit enim ipsa impedit laudantium ullam, sit distinctio explicabo maiores quidem debitis et atque vitae delectus omnis quos, eligendi hic commodi nemo quisquam asperiores. Deleniti a iure minus distinctio, pariatur suscipit sint perspiciatis odit nesciunt cum libero voluptates delectus illo molestiae at quibusdam rem nostrum nihil magnam? Provident obcaecati, voluptates quo ex facilis dolorem distinctio cupiditate alias ratione, aperiam atque ea sunt nemo voluptatum explicabo velit aliquid repellendus sapiente magnam molestiae veritatis quisquam omnis placeat? Esse, totam sequi aperiam assumenda ducimus cupiditate! Dolore, omnis dolor? Magnam doloribus dolore assumenda repudiandae recusandae fuga odio tenetur, nam veritatis neque explicabo expedita ipsa, quia facere asperiores blanditiis sunt debitis nemo aperiam! Illo quis dolores voluptas sit?</h2>
+    <a href="https://www.parvam.com">RamyA_M</a>
+    <a href="https://www.Google.com">Google</a>
+
+    <div> This is a div  block of code.</div>
+    <div>This is a another div dlock of code.</div>
+    <span>This is a span block of code.</span>
+    <span>This is a another span block of code</span>
+    <!-- We have 2 types of elements in HTML.
+    They are: Block elements & Inline element -->
+    <h1>This is a heading</h1>
+    <h1>This is a another heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae itaque cupiditate maiores distinctio. Rem, temporibus officiis enim soluta praesentium blanditiis esse repudiandae id ipsa dicta quisquam veniam, ducimus nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus id illum nihil numquam. Eius cum voluptatum reiciendis soluta temporibus, repellendus, tempora pariatur odio, et non iure id asperiores reprehenderit excepturi. Quia eligendi hic illum praesentium a minus, ipsum est qui iure tempora saepe? Pariatur incidunt qui placeat fugiat atque!</p>
+    <h1>This is a flower</h1>
+    <figure>
+        <img src="media_1/flower1.jpg"alt="nature_image" width="300px">
+        <img src="media_1/natur.jpg"alt="nature_image" width="300px">
+        <img src="media_1/flower2.jpg"alt="nature_image" width="300px">
+    </figure>
+</body>
+
+</html>

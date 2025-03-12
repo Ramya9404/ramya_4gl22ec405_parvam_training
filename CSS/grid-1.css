@@ -1,0 +1,94 @@
+@font-face {
+    font-family:PlaywriteITModerna ;
+    src: url("font_family/PlaywriteITModerna-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: DancingScript-Variable;
+    src: url("font_family/DancingScript-VariableFont_wght.ttf");
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+h1{
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    /* grid-template-column: 100px 100px 100px 100px 100px 100px 100px 100px; */
+    /* syntax:grid-template-column:repeat(no.of times, size); */
+    grid-template-columns:repeat(8, auto) ;
+    background-color:aqua ;
+}
+.pic{
+    border: 5px ridge black;
+    padding: 10px;
+    width:45vw;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 50px;
+    color: red;
+    font-family: PlaywriteITModerna;
+    text-decoration: underline;
+}
+.heading-1{
+    font-size: 60px;
+    background-color:blueviolet;
+}
+.caption{
+    border: 3px dashed brown;
+    padding: 20px;
+    text-align: justify;
+}
+.img-1{
+    grid-row: 2/4;
+    grid-column: 2/4;
+}
+.caption-1{
+    grid-row: 4/5;
+    grid-column: 2/4; 
+    background-color: antiquewhite; 
+    font-family: DancingScript-Variable;
+    font-weight: 30px;
+    font-size:25px ; 
+}
+.img-2{
+    grid-row: 2/4;
+    grid-column: 6/8;
+}
+.caption-2{
+    grid-row: 4/5;
+    grid-column: 6/8;
+    background-color: antiquewhite; 
+    font-family: DancingScript-Variable; 
+    font-weight: 30px;
+    font-size:25px ;  
+}
+.img-3{
+    grid-row: 7/9;
+    grid-column: 2/4;
+}
+.caption-3{
+    grid-row: 9/10;
+    grid-column: 2/4;
+    background-color: antiquewhite;
+    font-family: DancingScript-Variable; 
+    font-weight: 30px; 
+    font-size:25px ;  
+}
+.img-4{
+    grid-row: 7/9;
+    grid-column: 6/8;
+    height: 380px;
+}
+.caption-4{
+    grid-row: 9/10;
+    grid-column: 6/8;
+    background-color: antiquewhite; 
+    font-family: DancingScript-Variable;
+    font-weight: 30px; 
+    font-size:25px ; 
+}

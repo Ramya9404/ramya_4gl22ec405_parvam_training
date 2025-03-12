@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Internal CSS
+         CSS is a top to down property or start not apply-last apply -->
+        <style>
+            /* syntax: */
+            /* selector{ */
+            /* property1 : value;
+            property2 : value; 
+        }*/
+
+            h1{ /*This is element selector*/
+            color: orange;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-left: 40px;
+            margin-right: 30px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 20px;
+            border: 1px solid black;
+            /* Syntax for shorthand property */
+            /* margin: top right bottom left - clockwise Direction */
+            margin: 50px 20px 30px 40px;
+            /* opposite direction: top-bottom & left-right */
+            margin: 30px 60px;
+            /* top right-left bottom */
+            margin: 30px 60px 90px;
+            padding: 10px 20px 30px 40px;
+            /* opposite direction: top-bottom & left-right */
+            padding: 40px 60px;
+            /* top right-left bottom */
+           padding: 30px 50px 70px;
+            }
+            p{ /*This is element selector*/
+                color: red; 
+            }
+            th{
+                color: blue;
+                background-color:yellow; 
+            }
+            td{
+                /* color: green; */
+                /* rgb stands for red; green & blue, Value can be b/w 0 to 255 */
+                /* color:rgb(165, 42, 42);*/
+                /* rgba method where a stands for alpha, value varies from 0 to 1
+                in decimal number*/
+                /* color: rgba(100,155,55,0.55);*/
+                /* hex code - Hexadecimal code */
+                 color: #7622b2;
+                 background-color: aqua;
+            }
+            table{
+               border-width: 10px;
+               border-color: brown;
+               /*Number of style used in the tables are solid, double, dashed, dotted,
+               groove, ridge */
+               border-style: groove;
+               /* shorthand property */
+               /* Syntax: border: width style color */
+               border: 15px ridge rgb(220, 20, 107);
+               /* To make the border curved */
+               border-radius: 20px;
+               /* we can apply border for 4 direction */
+               /* They are top, bottom, right, left */
+               border-top: 10px dashed darkblue;
+               border-bottom: 10px dashed rgb(20, 63, 220);
+               border-right: 10px ridge rgb(34, 178, 84);
+               border-left: 10px ridge rgb(45, 210, 30);
+               border=top-right-radius: 50px;
+               border=top-left-radius: 50px;
+               border=bottom-right-radius: 50px;
+               border=bottom-right-radius: 50px;
+               /* To make internal all border merger in single line */
+               border-collapse: collapse;
+            }
+            td{
+                border: 1px solid chocolate;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- There are 3 types of CSS in Web Development-->
+        <!-- Internal CSS, External CSS & Inline CSS-->
+        <h1>This is a Heading.</h1>
+        <h1>This is the second heading.</h1>
+        <p>This is a paragraph</p>
+        <!-- We have different kind of selectors in CSS-->
+        <!-- They are: Element Selector, Class Selector, ID Selector-->
+        <!-- Element Selector include all HTML tags -->
+            <table>
+                <!-- sfift +Alt +Bottom Arrow-->
+                <!--crtl + Alt + Bottom Arrow - Multi-line Cursor-->
+                <tr>
+                    <th>Table Heading 1</th>
+                    <th>Table Heading 2</th>
+                    <th>Table Heading 3</th>  
+                </tr>
+                <tr>
+                    <td>Table Body 11</td>
+                    <td>Table Body 12</td>
+                    <td>Table Body 13</td>
+                </tr>
+                <tr>
+                    <td>Table Body 21</td>
+                    <td>Table Body 22</td>
+                    <td>Table Body 23</td>  
+                </tr>
+            </table>
+    </body>
+</html>

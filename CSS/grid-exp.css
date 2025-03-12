@@ -1,0 +1,85 @@
+.parent{
+    border: 1px solid black;
+    background-color: rgb(147, 222, 135);
+    display: grid;
+    grid-template-rows:200px 100px 100px 100px 100px 100px ;
+    grid-template-columns:200px 200px 230px 200px 200px 200px 200px ;
+    gap: 5px;
+}
+ .child{
+     background-color: rgb(20, 220, 93);
+     border: 2px solid blue;
+     font-size: 70px;
+     color:black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image:url(media_1/flower1.jpg); 
+ }
+  .child-1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: orangered;
+ }
+ .child-2{
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:blueviolet;
+ }
+ .child-3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: aqua;
+ }
+  .child-4{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: darkgoldenrod;
+ }
+ .child-5{
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color:orangered;
+ }
+ .child-6{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-color: darkgoldenrod;
+ }
+ .child-7{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-color:blueviolet;
+    background-image: url(media_1/flower2.jpg);
+}
+ .child-8{
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: aqua;
+ }
+ .child-9{
+    grid-row-start: 3;
+    grid-row-end: 8;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    background-color:orangered;
+ }
+ 
+ 
+    

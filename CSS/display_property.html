@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: DancingScript-Variable;
+            src: url("font_family/DancingScript-VariableFont_wght.ttf");
+        }
+        .same-line{
+            display: inline;
+            word-spacing: 5px;
+           line-height: 2;
+        }
+        li{
+            display:inline;
+        }
+        a{
+            text-decoration: none;
+            padding:10px;
+            color: brown;
+            font-size: 30px ;
+            letter-spacing: 3px;
+            word-spacing: 1px;
+            letter-spacing: 5px;
+            font-family: "DancingScript-Variable";
+        }
+        ul{
+           text-align: center;
+        }
+        .links{
+            display: block;
+           background-color:aquamarine;
+           color: blue;
+        }
+        img{
+            width:400px;
+            display:block;
+        }
+        h2{
+            display: inline-block;
+            padding:30px;
+            border: 10px solid blue;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border: 15px ridge rgb(165, 42, 93);
+            background-color:aqua;
+        }
+        .para span{
+            font-size:30px;
+            /* display: none using the hide the content */
+             display: none; 
+        }
+        .another-para span{
+            visibility: hidden;
+         }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 class="same-line">This is first heading</h1>
+    <h1 class="same-line">This is a second heading</h1>
+    <p  class="same-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure deleniti optio, dolore quia unde. Rem laudantium esse pariatur saepe, ipsa eligendi dolorem reiciendis! Unde inventore aliquam atque sequi, dignissimos vitae excepturi, mollitia nihil odit nisi saepe eum non, cumque libero accusantium repellat eligendi corporis impedit! Numquam temporibus sint doloremque.</p>
+    <p  class="same-line">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque sequi minima earum non dolore nam hic aliquam repudiandae maxime animi magnam vero eum ad obcaecati aliquid, perferendis quos officiis.</p>
+    <ul>
+        <li>
+            <a href="home.html">home</a>
+        </li>
+        <li>
+            <a href="about Us.html">About Us</a>
+        </li>
+        <li>
+            <a href="services.html">services</a>
+        </li>
+        <li>
+            <a href="contact.html">contact Us</a>
+        </li>
+    </ul>
+    <h1>quick Links</h1>
+    <a class="links"href="home.html">home</a>
+    <a class="links"href="about Us.html">About Us</a>
+    <a class="links"href="services.html">services</a>
+    <a class="links"href="contact.html">contact Us</a>
+    <h1>ameland</h1>
+    <img src="media_1/ameland.jpg" alt="ameland">
+    <h1>islands</h1>
+    <img src="media_1/islands.jpg" alt="islands">
+    <h2>This is a sub-heading 1</h2>
+    <h2>This is a sub-heading 2</h2>
+</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <p class="para">We are learning<span> CSS</span>.</p>
+    <p class="another-para">We are learning<span>CSS along with</span>HTML.</p>
+</body>
+</html>
