@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+    <body>
+        <form method="post" action="">
+        <input type="hidden" name="secret_id" id="secret_id" value="Bond-007"><br><br>
+        <label for="first_name">First_name :</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Enter your name" required><br><br>
+        <label for="middle_name">Middle_name :</label>
+        <input type="text" name="middle_name" id="middle_name" placeholder="Enter your middlename" required>><br><br>
+        <label for="last_name">Last_name :</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Enter your lastname" required>><br><br>
+        <label for="usn">USN:</label>
+        <input type="text" name="usn" id="usn" value="4GL22EC405" readonly><br><br>
+        <label for="address">address:</label>
+        <textarea name="address" id="address" row="10" cols="40"></textarea><br><br>
+        <label for="email id">Email ID:</label>
+        <input type="email" name="email id" id="email id" autofocus> <br><br>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="enter 8 digits"> <br><br>
+        <label for="phone_number">phone number:</label>
+        <input type="tel" name="phone_number" id="phone_number" value="+91-9876543210" disabled><br><br>
+        <label for="age">age:</label>
+        <input type="number" name="age" id="age" step="2"><br> <br>
+        <label for="DOB">DOB:</label>
+        <input type="DATE" name="dob" id="dob" min="2000-01-01" max="2025-02-17"><br><br>
+        <label for="birthday_week">birthday week:</label>
+        <input type="week" name="birthday_week" id="birthday week"><br><br>
+        <label for="birthday_month">birthday Month:</label>
+        <input type="month" name="birthday_month" id="birthday month"><br><br>
+        <label for="birth_time">birth Time:</label>
+        <input type="time" name="birth_time" id="birth time"><br><br>
+        <label for="dob_time"> DOB with Birthday Time:</label>
+        <input type="datetime-local" name="dob_time" id="dob_time" value="dob_time"><br><br>
+        <label for="gender"> gender:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male"> male:</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female"> female:</label>
+        <input type="radio" name="gender" id="others">
+        <label for="others">others</label><br><br>
+        <label for="subjects">Favourite Subjects</label>
+        <input type="checkbox" name="subject1" id="maths" value="maths">
+        <label for="maths">Mathematics</label>
+        <input type="checkbox" name="subject2" id="Social science" value="social science">
+        <label for="social science">Social science</label>
+        <input type="checkbox" name="subject3" id="kannada" value="kannada">
+        <label for="Kannada">kannada</label>
+        <input type="checkbox" name="subject4" id="science" value="science">
+        <label for="science">science</label><br><br>
+        <label for="state">select state:</label>
+        <select name="state" id="state">
+        <option value="KA">Karnataka</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="MH">Maharashtra</option>
+        <option value="MP">Madhya Pradesh</option><br><br>
+
+        <input type="file" name="upload photo"><br><br>
+        <input type="file" name="photo" id="file" multiple><br><br>
+        <input type="file" name="photo" id="file" multiple accept="application/docx,Application/pdf"><br><br>
+        <input type="file" name="photo" id="file" multiple accept="image/jpg,image/png"><br><br>
+        <input type="reset"><br><br>
+    </select>
+
+      <label for="rating">Give Your rating</label>
+      <input type="range" name="rating" id="rating" min="0" max="100"><br><br>
+      <label for="color"> select your favorite color:</label>
+      <input type="color" name="color" id="color"><br><br>
+
+      <input type="reset" value="Clear">
+      <input type="submit" value="submit">
+      </form>
+    </body>
+</html>

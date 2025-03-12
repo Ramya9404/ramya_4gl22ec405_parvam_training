@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face {
+            font-family: DancingScript-Variable;
+            src: url("Fonts_1/DancingScript-VariableFont_wght.ttf");
+        }
+         @font-face {
+            font-family: BebasNeue;
+            src: url("Fonts_1/BebasNeue-Regular.ttf");
+        }
+         @font-face {
+            font-family: DMSans-Variable;
+            src: url("Fonts_1/DMSans-VariableFont_opsz\,wght.ttf");
+        }
+         @font-face {
+            font-family: Pacifico-Regular;
+            src: url("Fonts_1/Pacifico-Regular.ttf");
+        }
+         @font-face {
+            font-family:PlaywriteITModerna ;
+            src: url("Fonts_1/PlaywriteITModerna-VariableFont_wght.ttf");
+        }
+         @font-face {
+            font-family:RobotoCondensed-Variable ;
+            src: url("Fonts_1/RobotoCondensed-VariableFont_wght.ttf");
+        }
+        .heading-1{
+            font-family: "DancingScript-Variable";
+            font-size: 60px;
+            color: blue;
+            font-weight: 100px;
+            background-color: lightcoral;
+        }
+        .para-1{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            text-align: justify;
+        }
+        .heading-2{
+            font-family: "DancingScript-Variable";
+            font-size: 40px;
+            color: rgb(255, 47, 0);
+            font-weight: 70px;
+            background-color: chartreuse;
+        }
+        .heading-3{
+            font-family: "PlaywriteITModerna";
+            font-size: 60px;
+            color: rgb(255, 0, 115);
+            font-weight: 60px;
+            background-color: burlywood;
+        }
+        .heading-4{
+            font-family: "PlaywriteITModerna";
+            font-size: 40px;
+            color: rgb(0, 255, 4);
+            font-weight: 60px;
+            background-color: darkkhaki;
+        }
+        .para-4{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            text-align: justify;
+        }
+        .heading-6{
+            font-family: "DMSans-Variable";
+            font-size: 40px;
+            color: rgb(255, 0, 43);
+            font-weight: 60px;
+            background-color: chartreuse;
+        }.heading-7{
+            font-family: "PlaywriteITModerna";
+            font-size: 40px;
+            color: rgb(238, 0, 255);
+            font-weight: 60px;
+            background-color: aqua;
+        }.heading-8{
+            font-family: "DMSans-Variable";
+            font-size: 40px;
+            color:brown;
+            font-weight: 60px;
+            background-color: aquamarine;
+        }
+        .logo{
+            flex-grow: 2; 
+        }
+        .menu-items{
+            padding: 20px;
+            flex-grow: 1;
+        }
+        nav{
+           background-color: aliceblue;
+           border: 10px ridge rgb(128, 128, 128);
+        }
+        .menu-bar{
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 40px;
+        }
+        a:hover{
+          color:red;
+          text-decoration: underline;
+          font-size: 60px;
+        }
+        .para-7{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            text-align: center;   
+            border: 2px solid black;
+            text-align: center;
+        }
+        .para-10{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            background-color: aquamarine;
+        }
+        .para-11{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;   
+            background-color:bisque;
+        }
+        .para-12{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            background-color: azure;
+        }
+        .para-5{
+            font-family: "Pacifico-Regular";
+            font-size: 20px;
+            border: 4px solid blue;
+            width: 500px;
+            background-color:cornsilk;
+            padding: 30px;
+        }
+        table,td,th,tr{
+            border: 1px solid Black;
+            border-collapse:collapse;
+            padding: 20px;
+        }
+        th{
+            color: blue;
+            background-color:yellow;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        td{
+            color: #7622b2;
+            background-color: aquamarine; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+        table{ 
+            border-width: 10px;
+            border-color: brown;
+            border-style: groove;
+            border: 15px ridge rgb(220, 20, 107);
+            border-radius: 20px;
+            border-top: 10px ridge rgb(220, 20, 180);
+            border-bottom: 10px ridge rgb(220, 20, 180);
+            border-right: 10px ridge rgb(30, 210, 63);
+            border-left: 10px ridge rgb(30, 210, 63);
+        }
+        .parent{
+            border: 2px ridge brown;
+            display: flex;
+            height: 300px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-content: space-evenly;
+            gap:30px;
+        }
+        .child{
+            width: 200px;
+            height: 100px;
+            background-color: darkmagenta;
+            border: 1px solid white;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+        <nav>
+            <ul class="menu-bar">
+                <li class="menu-items logo">
+                    <img src="medias/GECK logo.jpg" alt="GECK logo">
+                </li>
+                <li class="menu-items">
+                    <a href="#main-heading">GECK</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#second-heading">Table</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#third-heading">Picture</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#fourth-heading">Flex_Box</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#fifth-heading">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+  </header>
+  <aside>
+        <p class="para-1">This is a division for side portion of the website.</p>
+  </aside>
+  <main>
+        <section id="main-heading">
+            <h1 class="heading-1">GEC Kushalnagar</h1>
+            <p class="para-1"> This is a Engineering colleage situated in Kushalnagar, nearby Nisargadhamam.</p>
+            <p class="para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas corporis libero magni laudantium magnam quibusdam odio harum non, consequatur tempora autem quae nam, obcaecati eius exercitationem! Consectetur, eligendi et? Unde, alias. Esse asperiores recusandae dicta officia laboriosam, voluptatum beatae doloremque quia dignissimos quibusdam veritatis provident doloribus est odit magni ex! Laborum vel iure nobis optio vero libero natus nulla deserunt nesciunt alias similique, impedit, magni, quos tenetur molestiae earum veniam! Assumenda, facilis necessitatibus. Eaque distinctio maxime aperiam atque? Quisquam aliquid dolorum eveniet deleniti voluptatibus assumenda voluptates nemo at. Quibusdam alias voluptas perferendis explicabo architecto magnam similique non consequatur in.</p>
+            <h3 class="heading-2">History of GECK</h3>
+            <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque numquam ad at cumque asperiores dolores beatae. Itaque veritatis eveniet perspiciatis assumenda repudiandae voluptatem, quisquam a ex reprehenderit blanditiis neque quo. Asperiores ullam eos nisi, velit veniam provident odio impedit quibusdam. Provident culpa ex commodi voluptate, cumque rerum quia vel soluta doloribus! Perspiciatis accusamus, deserunt tempora alias optio sunt quos officiis exercitationem expedita deleniti dignissimos necessitatibus quam velit, explicabo dolore repellendus voluptates id excepturi beatae. Incidunt nihil fuga amet voluptas esse quam, ut fugit assumenda excepturi consectetur! Autem vitae aperiam mollitia nostrum molestias, assumenda voluptates itaque. Voluptas, modi recusandae dolorum tempore quam quisquam veniam corporis ducimus deleniti omnis quaerat eligendi, ex quia officia mollitia repudiandae similique? Explicabo ea quidem illo aut dignissimos eligendi dicta quibusdam, temporibus at consectetur atque cupiditate id minima beatae voluptatem rem officia iusto architecto odio ex quas hic, dolores nostrum eum? Recusandae aspernatur obcaecati nihil amet nostrum quibusdam animi qui, expedita impedit aliquam optio eos, mollitia, error perferendis! Esse repellat deserunt, quam natus eum laboriosam sunt cupiditate quisquam qui laborum reprehenderit at placeat voluptatem officia minus nostrum rem architecto vitae. Magni hic quas, dolores molestias, ut eaque facere dolorum deserunt repudiandae vitae nisi, omnis dolore magnam.</p>
+        </section>
+        <section id="second-heading">
+            <table>
+                <h2 class="heading-3">Time Table</h2>
+                <tr>
+                   <th>Weeks/Time</th>
+                   <th>9:30</th>
+                   <th>10:30</th>
+                   <th>11:30</th>
+                   <th>12:30</th>
+                   <th>1:30</th>
+                   <th>1:30-2:30</th>
+                   <th>2:30-4:30</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>BSP</td>
+                    <td>O&WC</td>
+                    <td rowspan="2">Advance VLSI</td>
+                    <td>NS</td>
+                    <td>Python</td>
+                    <td rowspan="5">Lunch Break</td>
+                    <td>Communication Lab</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>PE</td>
+                    <td rowspan="2">NS</td>
+                    <!-- <td>Advance VLSI</td> -->
+                    <td>Advance VLSI</td>
+                    <td>NS</td>
+                    <!-- <td>Lunch Break</td> -->
+                    <td>IOT Lab</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CCN</td>
+                    <!-- <td>Ns</td> -->
+                    <td>MIRT</td>
+                    <td>NS</td>
+                    <td>BSP</td>
+                    <!-- <td>Lunch Break</td> -->
+                     <td>VLSI Lab</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td colspan="2">Advance VLSI</td>
+                    <td>Co-ARM</td>
+                    <td>Python</td>
+                    <td>Co-ARM</td>
+                    <!-- <td>Lunch Break</td> -->
+                    <td>Communication Lab</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>BSP</td>
+                    <td colspan="2">O&WC</td>
+                    <!-- <td>O&WC</td> -->
+                    <td>NS</td>
+                    <td>BSP</td>
+                    <!-- <td>Lunch Break</td> -->
+                    <td>IOT Lab</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>MRIT</td>
+                    <td>Python</td>
+                    <td>NS</td>
+                    <td>CCN</td>
+                    <td>PT</td>
+                    <td colspan="2">Empty</td>
+                    <!-- <td>Empty</td> -->
+                </tr>
+            </table><br><br>
+            <h2 class="heading-4">Ordered List</h2>
+            <ol class="para-4">
+                <ol type="a">
+                <li>Electronics and Communication Engg</li>
+                <li>Computer science Engg</li>
+                <li>Mechanical Engg</li>
+                <li>Civil Engg</li>
+            </ol>
+            <h2 class="heading-4">Unordered List</h2>
+            <ul class="para-4">
+               <ul type="square">
+               <li>physics</li>
+               <li>maths</li>
+               <li>chemistry</li>
+               <li>science</li>
+            </ul>
+        </section>
+        <section id="third-heading">
+            <h1 class="heading-6">List the some picture of GECK</h1>
+            <figure>
+                <img src="medias/GECK_1.jpg" alt="GECK_1">
+                <img src="medias/GECK_2.jpg" alt="GECK_1">
+                <img src="medias/GECK_3.jpg" alt="GECK_1">
+                <img src="medias/GECK_4.jpg" alt="GECK_1">
+                <h1 class="heading-7">Videos</h1>
+                <video src="medias/WhatsApp Video_geck.mp4" controls height="300px" loop autoplay muted></video>
+                <video src="medias/WhatsApp Video_2.mp4" controls height="300px"  width="400px"loop autoplay muted></video><br><br>
+                <h1 class="heading-1">Audio</h1>
+                <audio src="medias/audio.mp3" controls width="400px" autoplay muted loop></audio>
+            </figure>
+        </section>
+        <section id="fourth-heading">
+            <div class="parent">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+                <div class="child">7</div>
+                <div class="child">8</div>
+                <div class="child">9</div>
+                <div class="child">10</div> 
+            </div>
+        </section>
+        <section id="fifth-heading">
+            <h1 class="heading-8">Forms</h1>
+            <form class="para-5" method="post" action="">
+            <input type="hidden" name="secret_id" id="secret_id" value="Bond-007"><br><br>
+            <label for="first_name">First_name :</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your name" required><br><br>
+            <label for="middle_name">Middle_name :</label>
+            <input type="text" name="middle_name" id="middle_name" placeholder="Enter your middlename" required><br><br>
+            <label for="last_name">Last_name :</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter your lastname" required><br><br>
+            <label for="usn">USN:</label>
+            <input type="text" name="usn" id="usn" value="4GL22EC405" readonly><br><br>
+            <label for="address">address:</label>
+            <textarea name="address" id="address" row="10" cols="40"></textarea><br><br>
+            <label for="email id">Email ID:</label>
+            <input type="email" name="email id" id="email id" autofocus> <br><br>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" placeholder="enter 8 digits"> <br><br>
+            <label for="phone_number">phone number:</label>
+            <input type="tel" name="phone_number" id="phone_number" value="+91-9876543210" disabled><br><br>
+            <label for="age">age:</label>
+            <input type="number" name="age" id="age" step="2"><br> <br>
+            <label for="DOB">DOB:</label>
+            <input type="DATE" name="dob" id="dob" min="2000-01-01" max="2025-02-17"><br><br>
+            <label for="gender"> gender:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male"> male:</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female"> female:</label>
+            <input type="radio" name="gender" id="others">
+            <label for="others">others</label><br><br>
+            <input class="para-10" type="reset" value="Clear">
+            <input class="para-11" type="submit" value="submit">
+            <input class="para-12" type="reset">
+        </form>
+        </section>
+    </main>
+    <footer>
+    <p class="para-7"> All Right Reserved &copy; 2025
+        <a href="http://www.com">target="_blank"GECK</a><sup>&reg;</sup>
+    </p>
+    </footer>
+</body>
+</html>
