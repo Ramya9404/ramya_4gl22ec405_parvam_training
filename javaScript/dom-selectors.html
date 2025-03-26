@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a heading!</h1>
+    <h1>This is a one more heading!</h1>
+    <p>This is a paragraph</p>
+    <h2 class="heading-2">This is a another heading</h2>
+    <h2 class="heading-2">This is a third heading</h2>
+    <p class="heading-2">This is a first para</p>
+    <p id="imp">This is important text</p>
+    <script>
+       // Selector reference using ID
+        const important = document.getElementById("imp");
+        console.log(important);
+
+        important.innerHTML = "This is very important!";
+
+        //Selector reference using Class Name
+        const heading2 = document.getElementsByClassName("heading-2");
+        console.log(heading2);
+
+        //[0/1/2]which class refering to
+        heading2[2].innerHTML = "This is second heading";
+
+       //Selector reference using tagname
+       const heading = document.getElementsByTagName("h1");
+       console.log(heading);
+
+       heading[0].style.color = "crimson";
+
+       //Selector reference using querySelectors
+       const secondHeading = document.querySelector(".heading-2");
+       console.log(secondHeading);
+
+       secondHeading.style.backgroundColor = "aqua";
+
+       const firstHeading = document.querySelector("h1");
+       console.log(firstHeading);
+
+       firstHeading.style.fontSize = "50px";
+
+       const allHeading = document.querySelectorAll("h1");
+       console.log(allHeading);
+
+       allHeading[0].style.backgroundColor = "blue";
+
+       const allClasses = document.querySelectorAll(".heading-2");
+       console.log(allClasses);
+
+       allClasses[1].style.padding = "50px";
+       allClasses[2].style.border = "1px solid black";
+
+       //To apply any css properties, just change it hypens to camel case
+      //Ex:- background-color => backgroundColor
+      //Ex:- text-align =>textAlign
+      //Ex:- padding-right => paddingRight
+      //Ex:- font-size => fontSize
+    </script>
+</body>
+</html>

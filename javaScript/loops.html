@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        // syntax:for(Initialization; Condition; Increment/Decrement)
+        for(var i=0; i<num; i++){
+            console.log("JavaScript");
+        }
+       // print first 10 numbers
+       for(var i=0; i<num; i++){
+        console.log(`${i}`);
+       }
+       // print first 10 natural numbers
+       for(var i=1; i<=num; i++){
+        console.log(`${i}`);
+       }
+       //print first 10 multiples of 2
+       for(var i=1; i<=num; i++){
+        console.log(`19 x ${i} = ${19*i}`);
+       }
+       //print first 10 odd number
+        var limit = 20;
+        for(var i=1; i<=limit; i++){
+            if(i%2 != 0){
+                console.log(`${i}`);
+            }
+        }
+        //print 1 to 10 tables
+        for(var i=1; i<=num; i++){
+            for(var j=1; j<=num; j++){
+                console.log(`${i} X ${j} = ${i * j}`);
+            }
+        }
+        
+        var i = 0;
+        while(i<=num){
+            console.log(`${i}`);
+            i+=1; // i+=1 <=> i++ <=> i = i+1
+        }
+        //Print first 10 even numbers using while loop
+        var i = 1, num = 20;
+        while(i<=num){
+            if(i%2 != 0){  //!= odd number & == even number only
+                console.log(`${i}`);
+            }
+            i++;
+        }
+        // Sum of first 10 natural numbers
+        var sum = 0, num = 1, limit = 10;
+        while(num <= limit){
+            sum+=num;
+            num++;
+        }
+        console.log(`The Sum of first 10 number is: ${sum}`);
+
+        // Sum of first 5 natural numbers
+        var sum = 0, num = 1, limit = 5;
+        while(num <= limit){
+            sum+=num;
+            num++;
+            console.log(`The Sum of first 10 number is: ${sum}`);
+        }
+
+        // Reversing a number using while loop
+        var num = 20102, reverse = 0, digit = 0;
+        var isPalindrome = num;
+        console.log(`Original Number: ${num}`);
+        while(num > 0){
+             //digit = num % 10;
+             //reverse = reverse * 10 + digit;
+             reverse = reverse * 10 + num % 10;
+            num = Math.floor(num / 10);
+        }
+        console.log(`Reverse Number: ${reverse}`);
+        if(isPalindrome == reverse){
+            console.log(`${isPalindrome} is a Palindrome Number. Because ${isPalindrome} is equal to ${reverse}`);
+        }else{
+            console.log(`${isPalindrome} is not a Palindrome Number. Because ${isPalindrome} is equal to ${reverse}`);
+        }
+
+        //num = 54321, reverse = 0, digit = 0;
+            //step 1:
+               //54321 > 0 - T
+               //rev = 0 * 10 + (54321 % 10) => 0 + 1 => 1
+               //num = 54321 / 10 = 5432
+           //step 2:
+               //54321 > 0 - T
+               //rev = 1 * 10 + (5432 % 10) => 10 + 2 => 12
+               //num = 5432 / 10 = 543
+           //step 3:
+               //54321 > 0 - T
+               //rev = 1 * 10 + (543 % 10) => 10 + 2 => 123
+               //num = 543 / 10 = 54
+           //step 4:
+               //54321 > 0 - T
+               //rev = 1 * 10 + (54 % 10) => 10 + 2 => 1234
+               //num = 54 / 10 = 5
+           //step 5:
+               //54321 > 0 - T
+               //rev = 1 * 10 + (54 % 10) => 10 + 2 => 12345
+               //num = 5/ 10 = 0
+           //step 6:
+               //0 > 0 => F
+               
+        //step continues after loop end or stop or 0
+
+           // Reversing a number using while loop
+        var num = 1197531, reverse = 0, digit = 0;
+        console.log(`Original Number: ${num}`);
+        while(num > 0){
+             digit = num % 10;
+            reverse = reverse * 10 + digit;
+            // reverse *= 10 + num % 10;
+            num = Math.floor(num / 10);
+        }
+        console.log(`Reverse Number: ${reverse}`);
+
+        //start
+        //num = 1197531, reverse = 0, digit = 0;
+            //step 1:
+               //1197531 > 0 - T
+               //dig = 1197531 % 10
+               //rev = 0 * 10 + 1 =>1
+            //step 2:
+               //1197531 > 0 - T
+               //dig = 119753 % 10
+               //rev = 0 * 10 + 3 =>13
+            //step 3:
+               //1197531 > 0 - T
+               //dig = 11975 % 10
+               //rev = 0 * 10 + 5 =>135
+            //step 4:
+               //1197531 > 0 - T
+               //dig = 1197 % 10
+               //rev = 0 * 10 + 7 =>1357
+            //step 5:
+               //1197531 > 0 - T
+               //dig = 119 % 10
+               //rev = 0 * 10 + 9 =>13579
+            //step 6:
+               //1197531 > 0 - T
+               //dig = 11 % 10
+               //rev = 0 * 10 + 1 =>135791
+            //step 6:
+               //1197531 > 0 - T
+               //dig = 1 % 10
+               //rev = 0 * 10 + 1 =>1357911
+        //stop
+  
+       // Sum of the given number
+       var number = 1234, sum = 0;
+       while(number > 0){
+        sum = sum + number % 10;
+        number = Math.floor(number / 10);
+       }
+       console.log(`Sum of individual digit is: ${sum}`);
+
+       var Number = 5, fact = 1, i = 1;
+       while(i <=Number){
+            fact = fact * i;
+            i--;
+        }
+        console.log(`Foctorial of ${Number}: ${fact}`);
+
+        //do-while loop
+        var limit = 0, i = 1;
+
+        do{
+            console.log(`${i}`);
+            i++;
+            limit++;
+        }while(limit > 0);
+        var i = 1;
+        console.log(`Printing 10 numbers: `);
+
+        do{
+            console.log(`${i}`);
+            i++;
+        }while(i <= 10);
+    </script>
+</body>
+</html>
